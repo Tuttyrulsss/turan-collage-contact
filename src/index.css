@@ -109,3 +109,91 @@ button {
   border: 1px dashed #e5e7eb;
   margin-top: 8px
 }
+@media (max-width: 600px) {
+  .cipher-root {
+    padding: 12px 8px;
+    justify-content: stretch;
+  }
+
+  .cipher-card {
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.1);
+  }
+
+  .cipher-header h1 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .muted {
+    font-size: 11px;
+  }
+
+  .controls .row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .controls .row label {
+    min-width: 100%;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+
+  .small label {
+    min-width: 100%;
+    font-size: 14px;
+  }
+
+  .controls select,
+  .controls input[type=number],
+  .controls input[type=text],
+  .controls textarea,
+  .result textarea,
+  .reverse textarea {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .primary {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 15px;
+    border-radius: 12px;
+  }
+
+  .actions button,
+  .sub-controls button {
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .result,
+  .reverse {
+    margin-top: 16px;
+  }
+
+  .bf {
+    max-height: 140px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+
+
+  .cipher-card,
+  .controls textarea,
+  .result textarea,
+  .reverse textarea,
+  .controls select,
+  .controls input,
+  .actions button,
+  .sub-controls button {
+    transition: all 0.2s ease-in-out;
+  }
+}
