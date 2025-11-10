@@ -2,8 +2,6 @@
 import React, { useState, useEffect } from 'react'
 import './index.css'
 
-// Cipher Trainer — русский текст
-// Алгоритмы: Цезарь, Виженер, Подстановка
 const RUS = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ';
 const RUS_LOWER = RUS.toLowerCase();
 
