@@ -22,6 +22,8 @@
       padding: 20px;
     }
 
+    /* ================= CONTAINER ================= */
+
     .container {
       background: rgba(255, 255, 255, 0.95);
       border-radius: 30px;
@@ -31,6 +33,8 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       animation: fadeIn 0.8s ease-out;
     }
+
+    /* ================= ANIMATION ================= */
 
     @keyframes fadeIn {
       from {
@@ -43,6 +47,8 @@
         transform: translateY(0);
       }
     }
+
+    /* ================= HEADER ================= */
 
     .logo-section {
       text-align: center;
@@ -71,6 +77,8 @@
       margin: 30px 0;
     }
 
+    /* ================= CONTACTS ================= */
+
     .contacts-title {
       font-size: 28px;
       color: #333;
@@ -98,6 +106,11 @@
       border-color: #667eea;
     }
 
+    .contact-item:active {
+      transform: scale(0.98);
+      background: #eef0ff;
+    }
+
     .icon {
       width: 50px;
       height: 50px;
@@ -115,7 +128,12 @@
     }
 
     .icon-instagram {
-      background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      background: linear-gradient(135deg,
+          #f09433 0%,
+          #e6683c 25%,
+          #dc2743 50%,
+          #cc2366 75%,
+          #bc1888 100%);
     }
 
     .icon-whatsapp {
@@ -145,6 +163,8 @@
       font-weight: 600;
     }
 
+    /* ================= MAP ================= */
+
     .map-container {
       margin-top: 30px;
       border-radius: 15px;
@@ -159,40 +179,92 @@
       border: none;
     }
 
-    @media (max-width: 768px) {
-      .container {
-        padding: 40px 30px;
-      }
-
-      .logo {
-        font-size: 36px;
-      }
-
-      .contacts-title {
-        font-size: 24px;
-      }
-
-      .contact-item {
-        padding: 15px;
-      }
-
-      .icon {
-        width: 45px;
-        height: 45px;
-        font-size: 20px;
-        margin-right: 15px;
-      }
-
-      .map-container {
-        height: 250px;
-      }
-    }
+    /* ================= FOOTER ================= */
 
     .footer {
       text-align: center;
       margin-top: 30px;
       color: #888;
       font-size: 14px;
+    }
+
+    /* ================= MOBILE VERSION ================= */
+
+    @media (max-width: 768px) {
+
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 28px 20px;
+        border-radius: 22px;
+      }
+
+      .logo-section {
+        margin-bottom: 25px;
+      }
+
+      .logo {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .divider {
+        margin: 20px 0;
+      }
+
+      .contacts-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      .contact-item {
+        padding: 14px;
+        margin-bottom: 12px;
+        border-radius: 14px;
+      }
+
+      .contact-item:hover {
+        transform: none;
+      }
+
+      .icon {
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+        margin-right: 14px;
+      }
+
+      .contact-label {
+        font-size: 12px;
+      }
+
+      .contact-value {
+        font-size: 15px;
+      }
+
+      .map-container {
+        height: 220px;
+        margin-top: 20px;
+        border-radius: 14px;
+      }
+
+      .footer {
+        font-size: 12px;
+        margin-top: 20px;
+      }
+    }
+
+    /* ================= SMALL MOBILE ================= */
+
+    @media (max-width: 480px) {
+      .map-container {
+        display: none;
+      }
     }
   </style>
 </head>
