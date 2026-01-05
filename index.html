@@ -1,13 +1,253 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>anti-phishing-trainer</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты - Turan College Astana</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 30px;
+      padding: 60px 50px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      font-size: 48px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .divider {
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #667eea, transparent);
+      margin: 30px 0;
+    }
+
+    .contacts-title {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      margin-bottom: 15px;
+      background: #f8f9ff;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      border: 2px solid transparent;
+    }
+
+    .contact-item:hover {
+      transform: translateX(10px);
+      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+      border-color: #667eea;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .icon-2gis {
+      background: linear-gradient(135deg, #28a745, #20c997);
+    }
+
+    .icon-instagram {
+      background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+
+    .icon-whatsapp {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+    }
+
+    .icon-telegram {
+      background: linear-gradient(135deg, #0088cc, #229ED9);
+    }
+
+    .contact-content {
+      flex: 1;
+    }
+
+    .contact-label {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    .contact-value {
+      font-size: 16px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .map-container {
+      margin-top: 30px;
+      border-radius: 15px;
+      overflow: hidden;
+      height: 300px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 40px 30px;
+      }
+
+      .logo {
+        font-size: 36px;
+      }
+
+      .contacts-title {
+        font-size: 24px;
+      }
+
+      .contact-item {
+        padding: 15px;
+      }
+
+      .icon {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        margin-right: 15px;
+      }
+
+      .map-container {
+        height: 250px;
+      }
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo-section">
+      <div class="logo">TURAN</div>
+      <div class="subtitle">Колледж в Астане</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2 class="contacts-title">Наши контакты</h2>
+
+    <a href="https://2gis.kz/astana/geo/70000001018099865" target="_blank" class="contact-item">
+      <div class="icon icon-2gis">📍</div>
+      <div class="contact-content">
+        <div class="contact-label">Адрес</div>
+        <div class="contact-value">Найти нас на 2ГИС</div>
+      </div>
+    </a>
+
+    <a href="https://www.instagram.com/turan.college.astana" target="_blank" class="contact-item">
+      <div class="icon icon-instagram">📸</div>
+      <div class="contact-content">
+        <div class="contact-label">Instagram</div>
+        <div class="contact-value">@turan.college.astana</div>
+      </div>
+    </a>
+
+    <a href="https://wa.me/77007108414" target="_blank" class="contact-item">
+      <div class="icon icon-whatsapp">💬</div>
+      <div class="contact-content">
+        <div class="contact-label">WhatsApp (приёмная комиссия)</div>
+        <div class="contact-value">+7 700 710 84 14</div>
+      </div>
+    </a>
+
+    <a href="https://t.me/+5PPq6qvzYj9kNDEy" target="_blank" class="contact-item">
+      <div class="icon icon-telegram">✈️</div>
+      <div class="contact-content">
+        <div class="contact-label">Telegram</div>
+        <div class="contact-value">Присоединиться к каналу</div>
+      </div>
+    </a>
+
+    <div class="map-container">
+      <iframe src="https://2gis.kz/astana/geo/70000001018099865" allowfullscreen></iframe>
+    </div>
+
+    <div class="footer">
+      © 2026 Turan College Astana
+    </div>
+  </div>
+</body>
+
 </html>
